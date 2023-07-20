@@ -37,5 +37,4 @@ jobs:
     - name: Upload coverage reports to Codecov
       uses: actions/upload-artifact@v2
       env:
-        path: coverage.xml
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
