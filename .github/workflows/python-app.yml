@@ -32,7 +32,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        coverage run -m pytest --verbose -p no:cacheprovider --showlocals -W ignore --cov . --cache-clear --cov-report=xml
+        coverage run -m pytest --verbose -p no:cacheprovider --showlocals -W ignore --cov . --cov-report=xml
           
     - name: Upload coverage reports to Codecov
       uses: actions/upload-artifact@v2
